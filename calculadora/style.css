@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.calculator{
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 45px rgb(55, 0, 255);
+    text-align: center;
+    width: 320px;
+}
+.display{
+    background-color: #222;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    text-align: right; 
+    border-radius: 5px;  
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button{
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.button.dark-gray{
+    background-color: #333;
+    color: white;
+}
+.button.orange{
+    background-color: rgba(168, 10, 241, 0.747);
+    color: white; 
+}
+.button.orange:hover{
+    background-color: rgba(19, 68, 226, 0.733);
+}
+
+.button.light-gray{
+    background-color: white;
+    color: black;
+}
+
+.button-wide{
+
+    grid-column: span 2;
+    border-radius: 50px;
+}
+
+body {
+    background-image: url('universe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+.titulo {
+    font-size: 4em; /* Tamanho grande */
+    color: #ffffff; /* Cor branca */
+    text-shadow: 3px 3px 8px #ff0080, 0 0 20px #00ffff; /* Efeito neon */
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista (veja nota abaixo) */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+ }
